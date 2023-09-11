@@ -1,0 +1,110 @@
+/* Add styles for the fixed and transparent navbar */
+.transparent {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Increase the z-index value */
+}
+
+/* Update styles for the navbar content */
+.navbar {
+    height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-position: center;
+    z-index: 1001; /* Increase the z-index value */
+}
+
+/* Your existing CSS styles */
+body {
+    background-color: black;
+    font-family: "Helvetica Neue";
+}
+
+li {
+    color: azure;
+}
+
+.name {
+    color: azure;
+    padding: 0%;
+}
+
+.lit {
+    justify-content: end;
+    display: inline-block;
+    margin: 40px;
+    font-size: 20px;
+}
+.lit:hover{
+    color: gray;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.vibrant-background {
+    width: 99%;
+    height: 95%;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: vibrantBackground 10s infinite alternate;
+    border-radius: 10px;
+}
+
+@keyframes vibrantBackground {
+    0% {
+        background: linear-gradient(45deg, #0a0e15, #5c00b6, #00ffa3, #ff00f7);
+        background-size: 400% 400%;
+        background-position: 0% 100%;
+    }
+    100% {
+        background: linear-gradient(45deg, #ff00f7, #00ffa3, #5c00b6, #0a0e15);
+        background-size: 400% 400%;
+        background-position: 100% 0%;
+    }
+}
+
+.case-study {
+    justify-content: center;
+    margin-top: 20%;
+    color: azure;
+    margin-left: 24px;
+    margin-right: 24px;
+    line-height: 48px;
+    font-family: sans-serif;
+    padding: 24px;
+    z-index: 1001; /* Increase the z-index value */
+}
+
+.history {
+    justify-content: center;
+    gap: 24px;
+    margin-left: 24px;
+    font-size: 24px;
+    color: azure;
+    text-decoration: none;
+    padding: 24px;
+    z-index: 1001; /* Increase the z-index value */
+}
+
+.college {
+    text-decoration: none;
+    color: #c32aff;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.college:hover {
+    color: #5c00b6;
+}
