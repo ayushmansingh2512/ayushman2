@@ -107,4 +107,47 @@ body, html {
 
 .college:hover {
     color: #5c00b6;
+} 
+/* Your existing CSS styles for desktop */
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    /* Add styles for mobile here */
+
+    /* Update styles for the transparent navbar */
+    .transparent {
+        background-color: rgba(0, 0, 0, 0.8); /* Example background color for mobile */
+        height: auto; /* Adjust as needed for mobile */
+        position: relative; /* Reset the position */
+        width: auto; /* Adjust as needed for mobile */
+        padding: 10px; /* Adjust as needed for mobile */
+    }
+
+    /* Update styles for the navbar content */
+    .navbar {
+        height: auto; /* Adjust as needed for mobile */
+        padding-left: 20px; /* Adjust as needed for mobile */
+        padding-right: 20px; /* Adjust as needed for mobile */
+    }
+
+    /* Update styles for the case study and history elements */
+    .case-study,
+    .history {
+        margin-top: 10%; /* Adjust as needed for mobile */
+        margin-left: 10px; /* Adjust as needed for mobile */
+        margin-right: 10px; /* Adjust as needed for mobile */
+        font-size: 16px; /* Adjust as needed for mobile */
+        line-height: 32px; /* Adjust as needed for mobile */
+    }
+
+    /* Additional mobile-specific styles can be added here */
+
+    /* Remove any z-index values for mobile */
+    .transparent,
+    .navbar,
+    .case-study,
+    .history {
+        z-index: initial;
+    }
 }
+
