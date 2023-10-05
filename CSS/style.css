@@ -42,12 +42,7 @@ li {
     color: gray;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-}
+
 
 .vibrant-background {
     width: 99%;
